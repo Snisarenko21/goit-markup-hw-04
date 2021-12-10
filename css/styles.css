@@ -4,6 +4,7 @@
   --accent-color: #2196f3;
   --primary-white-color: #ffffff;
   --hero-footer-color: #2f303a;
+  --hero-bg-color: #c4c4c4;
   --text-footer: rgba(255, 255, 255, 0.6);
   --primary-bg-color: #f5f4fa;
   --border-color: #eeeeee;
@@ -131,7 +132,7 @@ img {
 .hero {
   background-image: linear-gradient(
       to right,
-      rgba(58, 48, 47, 0.4),
+      rgba(47, 48, 58, 0.4),
       rgba(47, 48, 58, 0.4)
     ),
     url(../images/hero.jpg);
@@ -140,7 +141,9 @@ img {
   background-size: cover;
   padding-top: 200px;
   padding-bottom: 200px;
-  background-color: var(--hero-footer-color);
+  background-color: var(--hero-bg-color);
+  max-width: 1600px;
+  margin: auto;
 }
 .hero-title {
   font-weight: 900;
