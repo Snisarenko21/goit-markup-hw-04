@@ -292,30 +292,25 @@ img {
   padding-left: 32px;
   padding-right: 32px;
 }
-
 .social-links:not(:last-child) {
   margin-right: 10px;
 }
-
 .social-link {
-  display: block;
+  align-items: center;
+  justify-content: center;
+  display: flex;
   width: 44px;
   height: 44px;
   border-radius: 50%;
+  border-color: var(--primary-white-color);
 }
 .social-link:hover {
   background-color: var(--accent-color);
-}
-.social-link {
-  display: flex;
-  align-items: center;
-  justify-content: center;
 }
 .social-link:hover svg,
 .social-link:focus svg {
   fill: var(--primary-white-color);
 }
-
 .social-link svg {
   width: 20px;
   height: 20px;
