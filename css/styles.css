@@ -124,7 +124,7 @@ img {
   fill: var(--primary-text-color);
   margin-right: 10px;
 }
-.contact-icon:hover {
+.contacts-link:hover .contact-icon {
   fill: var(--accent-color);
 }
 
@@ -152,6 +152,7 @@ img {
   letter-spacing: 0.06em;
   text-align: center;
   color: var(--primary-white-color);
+  text-transform: uppercase;
 }
 .button-hero {
   font-weight: bold;
@@ -165,6 +166,7 @@ img {
   box-shadow: 0px 4px 4px rgb(0 0 0 / 15%);
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  border: none;
 }
 .button-hero:hover,
 .button-hero:focus {
@@ -300,7 +302,6 @@ img {
   width: 44px;
   height: 44px;
   border-radius: 50%;
-  background-color: var(--primary-bg-color);
 }
 .social-link:hover {
   background-color: var(--accent-color);
@@ -320,6 +321,39 @@ img {
   height: 20px;
   fill: var(--icon-color);
 }
+/* Постоянные клиенты */
+.clients-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  letter-spacing: 0.03em;
+  margin-bottom: 50px;
+  color: var(--title-text-color);
+}
+.clients-list {
+  display: flex;
+  justify-content: space-between;
+}
+.client-logo {
+  display: flex;
+  width: 170px;
+  height: 92px;
+  padding: 16px 32px;
+  border-radius: 4px;
+  border: 1px solid var(--icon-color);
+}
+
+.client-icon {
+  fill: var(--icon-color);
+}
+.client-logo:hover {
+  border-color: var(--accent-color);
+}
+.client-icon:hover,
+.client-icon:focus {
+  fill: var(--accent-color);
+}
 
 /* портфолио */
 
@@ -327,13 +361,6 @@ img {
   display: flex;
   justify-content: center;
   margin-bottom: 50px;
-}
-.filter-button:hover,
-.filter-button:focus {
-  color: var(--primary-white-color);
-  background-color: var(--accent-color);
-  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
-    0px 2px 2px rgb(0 0 0 / 12%);
 }
 .portfolio-button:last-child {
   margin-right: 8px;
@@ -357,6 +384,8 @@ img {
 .portfolio-button:focus {
   color: var(--primary-white-color);
   background-color: var(--accent-color);
+  box-shadow: 0px 3px 1px rgb(0 0 0 / 10%), 0px 1px 2px rgb(0 0 0 / 8%),
+    0px 2px 2px rgb(0 0 0 / 12%);
 }
 .portfolio-list {
   display: flex;
@@ -375,8 +404,8 @@ img {
   padding: 20px 24px;
   border-radius: 4px;
 }
-.portfolio-box:hover,
-.portfolio-box:focus {
+.portfolio-item:hover,
+.portfolio-:focus {
   box-shadow: 0px 1px 1px rgb(0 0 0 / 12%), 0px 4px 4px rgb(0 0 0 / 6%),
     1px 4px 6px rgb(0 0 0 / 16%);
 }
@@ -393,37 +422,6 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: var(--title-text-color);
-}
-
-/* Постоянные клиенты */
-.clients-title {
-  font-weight: bold;
-  font-size: 36px;
-  line-height: 1.17;
-  text-align: center;
-  letter-spacing: 0.03em;
-  margin-bottom: 50px;
-  color: var(--title-text-color);
-}
-.clients-list {
-  display: flex;
-  justify-content: space-between;
-}
-.client-logo {
-  display: flex;
-  width: 170px;
-  height: 92px;
-  padding: 16px 32px;
-  border-radius: 4px;
-  border: 1px solid var(--icon-color);
-  background-color: var(--primary-bg-color);
-}
-.client-icon {
-  fill: var(--icon-color);
-}
-.client-logo:hover .client-icon,
-.client-logo:focus .client-icon {
-  fill: var(--accent-color);
 }
 
 /* Футер */
@@ -471,7 +469,7 @@ img {
   padding-bottom: 60px;
 }
 .follow {
-  margin-top: 12px;
+  /* margin-top: 12px; */
   margin-left: 85px;
 }
 .follow-title {
@@ -510,4 +508,5 @@ img {
 footer .container {
   display: flex;
   justify-content: flex-start;
+  align-items: baseline;
 }
