@@ -106,7 +106,6 @@ img {
 .link-box.nav-item:last-child {
   margin-left: 50;
 }
-
 .contacts-link {
   font-weight: 500;
   font-size: 14px;
@@ -284,7 +283,6 @@ img {
   letter-spacing: 0.03em;
   color: var(--primary-text-color);
 }
-
 .social-links {
   display: flex;
   justify-content: space-between;
@@ -347,6 +345,10 @@ img {
 }
 .client-icon:hover,
 .client-icon:focus {
+  fill: var(--accent-color);
+}
+
+.client-logo:hover .client-icon {
   fill: var(--accent-color);
 }
 
